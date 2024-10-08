@@ -1,0 +1,12 @@
+[package]
+name = "dvault"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aes = "0.8.4"
+aes-gcm = "0.10.3"
+base64 = "0.22.1"
+clap = { version = "4.5.17", features = ["derive"]}
+dirs = "5.0.1"
+sha2 = "0.10.8"
