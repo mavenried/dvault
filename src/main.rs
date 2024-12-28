@@ -25,6 +25,8 @@ fn main() {
         args::Action::List => handlers::handle_list(dvault_home),
         args::Action::Lock(lock) => handlers::handle_lock(dvault_home, lock),
         args::Action::Unlock(unlock) => handlers::handle_unlock(dvault_home, unlock),
-        args::Action::Setup(setup) => handlers::handle_setup(dvault_home, setup),
+        args::Action::Setup(setup) => {
+            handlers::handle_setup(dvault_home, &dvault_config_path, setup)
+        }
     }
 }
