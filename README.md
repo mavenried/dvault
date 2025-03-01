@@ -7,7 +7,7 @@ DVault is an encryped folder manager written in rust.
 It was built as an intoduction to aes encryption.
 
 ## Usage
-### `setup`
+### setup
 ```sh
 dvault setup <path_to_dvault_home>
 ```
